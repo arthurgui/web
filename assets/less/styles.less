@@ -1,0 +1,167 @@
+@import 'fonts.less';
+@import 'elements.less';
+@import 'columns.less';
+@import 'colors.less';
+@import 'html-elements.less';
+@import 'background.less';
+@import 'bootstrap_personal.less';
+@import 'border.less';
+@import 'buttons.less';
+@import 'card.less';
+@import 'datatables-bootstrap4.less';
+@import 'fa.less';
+@import 'font-colors.less';
+@import 'forms.less';
+@import 'toastr.less';
+@import 'div-print.less';
+@import 'ckeditor.less';
+@import 'jasny-bootstrap.less';
+@import 'paragraph.less';
+
+@media screen{
+	body#tinymce{
+		overflow-y: scroll !important;
+	}
+	*{
+		// .transition-duration(0.2s);
+		.border-radius(0px) !important;
+	}
+	html {
+		position: relative;
+		min-height: 100%;
+	}
+	body {
+		background-color: #fff !important;
+		margin-bottom: 200px; 
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		font-size: 0.9rem;
+	}
+
+	footer{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		font-size: 0.8em;
+		height: 150px; 
+		& .container,
+		& .container-fluid{
+			padding: 20px 30px
+		}
+		& p{
+			margin-bottom: 0px;
+		}
+	}
+
+	/* login */
+	#container-login{
+		padding-top: 80px;
+		margin-bottom: 125px;
+		.row{
+			margin-bottom: 20px;
+		}
+	}
+	/* /login */
+
+	/* sistema */
+	.container-sistema{
+		padding-top: 80px;
+		margin-bottom: 125px;
+	}
+	.navbar-sistema{
+		background-color: @green-system;
+		color: #fff;
+		& a{
+			color: inherit;
+			&.navbar-brand{
+				& img{
+					height: inherit;
+				}
+			}
+		}
+		& button{
+			color: inherit;
+			&.navbar-toggler{
+				color: inherit;
+
+			}
+		}
+		div{
+			&.navbar-collapse{
+				color: inherit;
+				& ul{
+					color: inherit;
+					&.navbar-nav{
+						color: inherit;
+						& li{
+							color: inherit;
+							&.nav-item{
+								color: inherit;
+								& a{
+									&.nav-link{
+										color: inherit;
+										&:link{
+											color: inherit;;
+										}
+										&:visited{
+											color: inherit;
+										}
+										&:hover,
+										&:active{
+											color: lighten(@green-system,30%);
+										}
+									}
+								}
+								&.dropdown{
+									color: inherit;
+									& div{
+										color: inherit;
+										&.dropdown-menu{
+											color: inherit;
+											& a{
+												color: inherit;
+												&.dropdown-item{
+													color: inherit;
+													&:link{
+														color: inherit;;
+													}
+													&:visited{
+														color: inherit;
+													}
+													&:hover,
+													&:active{
+														background-color: lighten(@green-system,30%);
+														color: darken(@green-system,20%);
+													}
+												}
+											}
+											& div{
+												&.dropdown-divider{
+													border-top: 1px solid darken(@green-system,8%);
+													border-bottom: 1px solid lighten(@green-system,30%);
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.hover{
+		cursor: pointer;
+		&:hover{
+			background: darken(@gray-lighter,5%);
+			font-weight: 400;
+		}
+	}
+
+	.mce-label{
+		display: none !important;
+	}
+	/* /sistema */
+}

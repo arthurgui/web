@@ -1,0 +1,48 @@
+/* div-print */
+@media screen {
+  div.print {
+    display: block;
+    font-size: 0.85em !important;
+  }
+  div.print .div-pagina,
+  div.print .botoes {
+    border: #000 1px solid;
+    background-color: #fff;
+    width: 210mm;
+    padding: 20px;
+  }
+  div.print .div-pagina {
+    min-height: 297mm;
+  }
+  div.print .div-pagina table {
+    margin: auto auto 5px auto;
+  }
+  div.print .div-pagina .label-input {
+    padding: 0px 10px 0px 5px;
+    font-size: 0.9em;
+  }
+  div.print .div-pagina input[type="text"],
+  div.print .div-pagina input[type="email"],
+  div.print .div-pagina input[type="date"],
+  div.print .div-pagina textarea {
+    border: none;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  div.print .quebra {
+    page-break-after: always;
+  }
+}
+@media print {
+  div.print .div-pagina,
+  div.print .botoes {
+    border: none;
+  }
+  div.print .botoes {
+    display: none;
+  }
+  div.print .quebra {
+    page-break-after: always;
+  }
+}

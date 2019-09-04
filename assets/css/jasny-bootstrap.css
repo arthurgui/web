@@ -1,0 +1,9 @@
+.fileinput {
+  width: inherit !important;
+}
+.fileinput .fileinput-preview {
+  width: inherit !important;
+}
+.fileinput .fileinput-preview img {
+  width: inherit !important;
+}

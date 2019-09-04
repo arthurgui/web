@@ -1,0 +1,13 @@
+# Activar RewriteEngine
+RewriteEngine on
+#
+# Eliminar index.php
+#
+RewriteCond $1 !^(index\.php|robots\.txt|sitemap\.xml|assets)
+# Walder
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+SetEnv downgrade-1.0
+# Walder
+RewriteRule ^(.*)$ index.php/$1 [L]
+SetEnv CI_ENV development

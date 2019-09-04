@@ -1,0 +1,12 @@
+deploy_production:
+  stage: deploy
+  script:
+    - sshpass -p $SSH_SENHA ssh -o StrictHostKeyChecking=no $SSH_USUARIO@$SSH_HOST "cd $DIRETORIO_DEPLOY && git pull"
+  environment:
+    name: production
+  tags:
+    - deploy
+    - produção
+  only:
+    - master
+  #when: manual

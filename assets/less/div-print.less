@@ -1,0 +1,56 @@
+/* div-print */
+@media screen {
+	div{
+		&.print{
+			display: block;
+			font-size: 0.85em !important;
+			.div-pagina,
+			.botoes{
+				border: #000 1px solid;
+				background-color: #fff;
+				width: 210mm;
+				padding: 20px;
+			}
+			& .div-pagina{
+				min-height: 297mm;
+				& table{
+					margin: auto auto 5px auto;
+				}
+				& .label-input{
+					padding: 0px 10px 0px 5px;
+					font-size: 0.9em;
+				}
+				& input[type="text"],
+				& input[type="email"],
+				& input[type="date"],
+				& textarea {
+					border: none;
+					width: 100%;
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+			}
+			& .quebra { 
+				page-break-after: always; 
+			}
+		}
+	}
+}
+
+@media print {
+	div{
+		&.print{
+			.div-pagina,
+			.botoes{
+				border: none;
+			}
+			.botoes{
+				display: none;
+			}
+			& .quebra { 
+				page-break-after: always; 
+			}
+		}
+	}
+}
+/* /div-print */

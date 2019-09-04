@@ -1,0 +1,273 @@
+ /* Bootstrap */
+.btn,
+.card,
+.card-header:first-child,
+.card-footer:last-child,
+.input-group-text,
+.form-control{
+	.border-radius(0,0,0,0);
+}
+
+/* .dropdown-menu */
+.dropdown-menu{
+	.border-radius(0px);
+	// background-color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+/* /.dropdown-menu */
+
+.form-control{
+	font-size: inherit;
+	font-family: inherit;
+}
+
+.img-responsive{
+	// width: 100%;
+	// height: auto;
+}
+
+.input-group{
+	margin-bottom: 10px;
+}
+
+/* .input-group-addon */
+.input-group-addon{
+	.border-radius(0px, 0px, 0px, 0px);
+	padding: 8px 12px;
+}
+/* /.input-group-addon */
+
+/* .modal */
+
+.modal-body {
+    /* 100% = dialog height, 120px = header + footer */
+    // max-height: calc(100% - 120px);
+    // overflow-y: scroll;
+}
+/* /.modal */
+
+/* .navbar */
+.navbar{
+	& .navbar-collapse{
+		background-color: inherit;
+		font-size: inherit;
+		font-weight: inherit;
+		& .navbar-nav{
+			background-color: inherit;
+			font-size: inherit;
+			font-weight: inherit;
+			& .nav-item{
+				background-color: inherit;
+				font-size: inherit;
+				font-weight: inherit;
+				& .dropdown-menu{
+					background-color: inherit;
+					font-size: inherit;
+					font-weight: inherit;
+					& a{
+						&.dropdown-item{
+
+						}
+					}
+					& .dropdown-divider{
+						border-top: 1px solid @gray-light;
+					}
+					& .dropdown-header{
+						font-variant: all-petite-caps;
+    					font-stretch: expanded;
+    					& span{
+    						
+    					}
+					}
+				}
+			}
+		}
+	}
+	& a{
+		&.navbar-brand{
+			margin: auto !important;
+		}
+	}
+}
+
+.navbar-primary{
+	background-color: @primary;
+}
+.navbar-success{
+	background-color: @success;
+}
+.navbar-danger{
+	background-color: @danger;
+}
+.navbar-warning{
+	background-color: @warning;
+}
+.navbar-info{
+	background-color: @info;
+}
+.navbar-brand{
+	height: 50px;
+	padding: 0px;
+	img{
+		height: inherit;
+	}
+}
+.navbar-default{
+	background-color: @gray-lighter;
+}
+/* /.navbar */
+
+/* .nav-tabs */
+.nav-tabs{
+	&.nav-green-system{
+		border-color: @green-system !important;
+	}
+}
+/* /.nav-tabs */
+
+/* .nav-pills */
+.nav-pills{
+	&.pills-green-system{
+		& .nav-link{
+			&.active{
+				background-color: @green-system;
+				&:hover{
+					color: #fff;
+					cursor: default;
+				}
+			}
+			&:hover{
+				color: @green-system;
+			}
+		}
+	}
+}
+/* /.nav-pills */
+
+/* .popover */
+.popover{
+	.border-radius(0px);
+	padding: 1px;
+}
+.popover-primary{
+	&.bs-popover-bottom{
+	}
+	.arrow{
+		// border-color: @primary;
+		&:before,
+		&:after{
+			// border-bottom-color: @primary;
+		}
+	}
+	.popover-header{
+		background-color: @primary;
+		color: lighten(@primary,80%);
+		.border-radius(0px);
+	}
+}
+.popover-success{
+	&.bs-popover-bottom{
+	}
+	.arrow{
+		// border-color: @primary;
+		&:before,
+		&:after{
+			// border-bottom-color: @primary;
+		}
+	}
+	.popover-header{
+		background-color: @success;
+		color: lighten(@success,80%);
+		.border-radius(0px);
+	}
+}
+.popover-gray-light{
+	&.bs-popover-bottom{
+	}
+	.arrow{
+		// border-color: @primary;
+		&:before,
+		&:after{
+			// border-bottom-color: @primary;
+		}
+	}
+	.popover-header{
+		background-color: @gray-light;
+		color: lighten(@gray-light,80%);
+		.border-radius(0px);
+	}
+}
+.popover-green-system{
+	&.bs-popover-bottom{
+	}
+	.arrow{
+		// border-color: @primary;
+		&:before,
+		&:after{
+			// border-bottom-color: @primary;
+		}
+	}
+	.popover-header{
+		background-color: @green-system;
+		color: lighten(@green-system,80%);
+		.border-radius(0px);
+	}
+}
+/* /.popover */
+
+/* .tooltip */
+.tooltip-inner {
+	color: #fff;
+	background-color: @gray-light;
+	border-radius: 0rem;
+}
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.tooltip.bs-tooltip-top .arrow::before,
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.tooltip.bs-tooltip-bottom .arrow::before,
+.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.tooltip.bs-tooltip-right .arrow::before,
+.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.tooltip.bs-tooltip-left .arrow::before {
+	border-top-color: @gray-light;
+}
+/* /.tooltip */
+
+/* .pagination */
+.pagination{
+	& > li{
+		& > a,
+		& > span{
+			
+		}
+	}
+}
+/* /.pagination */
+
+/* table */
+table{
+	&.table-striped{
+		& tr{
+			&.odd{
+				background-color: @gray-lighter;
+			}
+		}
+	}
+	&.table-hover{
+		& tr{
+			&:hover{
+				background-color: darken(@gray-lighter,3%);
+			}
+		}
+	}
+}
+/* /table */
+
+/* label */
+label{
+	cursor: pointer;
+}
+/* /label */
+
+/* /Bootstrap */
